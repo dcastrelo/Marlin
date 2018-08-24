@@ -447,7 +447,7 @@
  * *** IT IS HIGHLY RECOMMENDED TO LEAVE THIS OPTION ENABLED! ***
  */
 #define PREVENT_COLD_EXTRUSION
-#define EXTRUDE_MINTEMP 170
+#define EXTRUDE_MINTEMP 5
 
 /**
  * Prevent a single extrusion longer than EXTRUDE_MAXLENGTH.
@@ -598,7 +598,12 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 595 }
+L3K con engranajes rectos
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 595 }
+
+Drakon Extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 348.56 }
+
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -768,7 +773,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 32  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.9   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -895,7 +900,7 @@
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
-  #define MIN_SOFTWARE_ENDSTOP_Z
+  //#define MIN_SOFTWARE_ENDSTOP_Z
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
