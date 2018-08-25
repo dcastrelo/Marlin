@@ -599,7 +599,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  * L3K con engranajes rectos                                     
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 607.94 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 607.94 } 
 
 /**
  * Drakon Extruder                                      
